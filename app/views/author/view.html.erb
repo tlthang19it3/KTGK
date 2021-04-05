@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="row">
+            <div class="col-md-1">
+                Mã Tác Giả
+            </div>
+            <div class="col-md-2">
+                Tên Tác Giả
+            </div>
+            <div class="col-md-6">
+                Website
+            </div>
+            <div class="col-md-3">
+                Ghi Chú
+            </div>
+    </div>
+
+    <% @author.each do |author| %>
+        <div class="row">
+                <div class="col-md-1">
+                    <%= author.ma_tac_gia %>
+                </div>
+                <div class="col-md-2">
+                    <%= author.ten_tac_gia %>
+                </div>
+                <div class="col-md-6">
+                    <%= author.website %>
+                </div>
+                <div class="col-md-3">
+                    <%= author.ghi_chu %>
+                </div>
+        </div>
+    <% end %>   
+
+</body>

@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="row">
+            <div class="col-md-2">
+                Mã Nhà Xuất Bản
+            </div>
+            <div class="col-md-2">
+                Tên Nhà Xuất Bản
+            </div>
+            <div class="col-md-3">
+                Địa Chỉ
+            </div>
+            <div class="col-md-3">
+                Email
+            </div>
+            <div class="col-md-2">
+                Người Đại Diện
+            </div>
+    </div>
+
+    <% @nxb.each do |nxb| %>
+        <div class="row">
+                <div class="col-md-2">
+                    <%= nxb.ma_nxb %>
+                </div>
+                <div class="col-md-2">
+                    <%= nxb.ten_nxb %>
+                </div>
+                <div class="col-md-3">
+                    <%= nxb.dia_chi %>
+                </div>
+                <div class="col-md-3">
+                    <%= nxb.email %>
+                </div>
+                <div class="col-md-2">
+                    <%= nxb.nguoi_dai_dien %>
+                </div>
+        </div>
+    <% end %>   
+
+</body>

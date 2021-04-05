@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="row">
+            <div class="col-md-6">
+                Mã Thể Loại
+            </div>
+            <div class="col-md-6">
+                Tên Thể Loại
+            </div>
+    </div>
+
+    <% @tl.each do |tl| %>
+        <div class="row">
+                <div class="col-md-6">
+                    <%= tl.ma_the_loai %>
+                </div>
+                <div class="col-md-6">
+                    <%= tl.ten_the_loai %>
+                </div>
+        </div>
+    <% end %>   
+
+</body>

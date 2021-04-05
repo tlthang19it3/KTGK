@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ma_sach: 1
+  ten_sach: MyString
+  authors: one
+  nha_xuat_bans: one
+  the_loais: one
+
+two:
+  ma_sach: 1
+  ten_sach: MyString
+  authors: two
+  nha_xuat_bans: two
+  the_loais: two

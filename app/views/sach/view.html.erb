@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="row">
+            <div class="col-md-2">
+                Mã sách
+            </div>
+            <div class="col-md-2">
+                Tên sách
+            </div>
+            <div class="col-md-2">
+                Tên tác giả
+            </div>
+            <div class="col-md-2">
+                Tên Nhà Xuất Bản
+            </div>
+            <div class="col-md-2">
+                Tên Thể Loại
+            </div>
+            <div class="col-md-2">
+                Năm Xuất Bản
+            </div>
+    </div>
+
+    <% @book.each do |book| %>
+        <div class="row">
+                <div class="col-md-2">
+                    <%= book.ma_sach %>
+                </div>
+                <div class="col-md-2">
+                    <%= book.ten_sach %>
+                </div>
+                <div class="col-md-2">
+                    <%= book.authors_id %>
+                </div>
+                <div class="col-md-2">
+                    <%= book.nha_xuat_bans_id %>
+                </div>
+                <div class="col-md-2">
+                    <%= book.the_loais_id %>
+                </div>
+                <div class="col-md-2">
+                     <%= book.nam_xb %>
+                </div>
+        </div>
+    <% end %>   
+
+</body>
